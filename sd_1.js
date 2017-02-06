@@ -1,7 +1,7 @@
-https://jsfiddle.net/
-
-https://github.com/lubieciastka
-https://github.com/lubieciastka/dotnet
+// https://jsfiddle.net/
+// nofluffjobs.com
+// https://github.com/lubieciastka
+// https://github.com/lubieciastka/dotnet
 
 var myArray = [];
 
@@ -49,6 +49,22 @@ for(var i = 0; i < 10; i++){
 
 console.table(myArray);
 
+var array = [1,4,2,10,12,1, 100];
+var minValue = array[0];
+var maxValue = array[0];
+
+//Do domu: sprawdzenie czy element w tablicy jest liczba (isNaN)
+
+for (var i = 0; i < array.length; i++){
+	if (minValue > array[i]){
+  	minValue = array[i];
+	}
+  if (maxValue < array[i]){
+  	maxValue = array[i];
+  }
+}
+
+console.log("minValue: ", minValue, "maxValue: ",maxValue);
 
 
 
