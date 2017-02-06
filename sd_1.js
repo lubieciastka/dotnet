@@ -66,7 +66,22 @@ for (var i = 0; i < array.length; i++){
 
 console.log("minValue: ", minValue, "maxValue: ",maxValue);
 
+// praca domowa - wygenerowac ponizsza tablice samemu 
+// hint: zakres do 10 elementow
+// hint: Math.random() - pamietajac o tym co zwraca ta metoda <0,1)
+// hint: Math.floor() vs Math.ceil()
+// hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
+var array = [1,4,2,10,12];
+
+for (var i = 0; i < array.length; i++) {
+	var temp = "";
+  for (var j = 0; j < array[i]; j++){
+		temp = temp + "X";
+    //temp += "X"
+  }
+  console.log(temp);
+}
 
 
 
