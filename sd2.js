@@ -65,3 +65,21 @@ for(var i = 0; i < allImg.length; i++){
     allImg[i].setAttribute('src', 'http://www.kotydomowe.com/img/koty/perskie/Perski-Srebrny-Shell-Szynszyla3.jpg');
 }
 
+http://codepen.io/anon/pen/ggKxmB
+
+// Zadanie 1
+// nadaj co drugiemu elementowi list o id zadanie1 klase error
+
+var allLi = document.querySelectorAll('#zadanie1 li');
+
+for (var i = 0; i < allLi.length; i++) {
+  if (i % 2 === 1) {
+    allLi[i].classList.add('error');
+  }
+
+}
+console.log(allLi);
+
+
+
+
