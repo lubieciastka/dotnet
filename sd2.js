@@ -70,15 +70,36 @@ http://codepen.io/anon/pen/ggKxmB
 // Zadanie 1
 // nadaj co drugiemu elementowi list o id zadanie1 klase error
 
-var allLi = document.querySelectorAll('#zadanie1 li');
+// var allLi = document.querySelectorAll('#zadanie1 li');
 
-for (var i = 0; i < allLi.length; i++) {
-  if (i % 2 === 1) {
-    allLi[i].classList.add('error');
-  }
+// for (var i = 0; i < allLi.length; i++) {
+//   if (i % 2 === 1) {
+//     allLi[i].classList.add('error');
+//   }
 
+// }
+// console.log(allLi);
+
+// Zadanie 2
+// nadaj wszystkim elementom listu o id zadanie2 klase active ( w przypadku jezeli ta klasa juz istnieje zdejmij ta klase)
+
+// var allLi = document.querySelectorAll('#zadanie2 li');
+
+// for (var i = 0; i < allLi.length; i++) {
+//   allLi[i].classList.toggle('active');
+
+// }
+// console.log(allLi);
+
+// Zadanie 3 
+// Podmien obrazek tak, aby wyswietlal obraz psa a nie kota
+var allImg = document.querySelectorAll('img');
+
+for(var i = 0; i < allImg.length; i++){
+    allImg[i].setAttribute('src', 'http://www.kotydomowe.com/img/koty/perskie/Perski-Srebrny-Shell-Szynszyla3.jpg');
 }
-console.log(allLi);
+// Zadanie 4 
+// zadanie specjalne na stronie www
 
 
 
