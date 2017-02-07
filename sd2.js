@@ -57,3 +57,11 @@ for( var i = 0; i < allLi.length; i++){
   console.log(allLi[i].innerHTML);
 }
 
+
+//koty
+var allImg = document.querySelectorAll('img');
+
+for(var i = 0; i < allImg.length; i++){
+    allImg[i].setAttribute('src', 'http://www.kotydomowe.com/img/koty/perskie/Perski-Srebrny-Shell-Szynszyla3.jpg');
+}
+
