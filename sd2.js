@@ -101,6 +101,26 @@ for(var i = 0; i < allImg.length; i++){
 // Zadanie 4 
 // zadanie specjalne na stronie www
 
+http://codepen.io/anon/pen/JEZyZO
+
+
+// Zadanie 1
+// Znajdz element o klasie zadanie1 nastepnie znajdz jego dziadka, znajdz kolejny element na tym samym poziomie, znajdz ostatnie dziecko tego elementu, znajdz pierwszy element listy
+
+console.log(document.querySelector('.zadanie1').parentElement.parentElement.nextElementSibling.lastElementChild.firstElementChild)
+
+// Zadanie 2 
+// Znajdze element o id zadanie2, znajdz jego dziadka, znajdz pierwsze dziecko, znajdz przedostati element, wyswietl 3 litere wartosci tego elementu
+
+console.log(document.querySelector('#zadanie2').parentElement.parentElement.firstElementChild.lastElementChild.previousElementSibling.innerHTML[2]);
+
+var array = [1,2,3,4,5];
+
+console.log(array[Math.floor(Math.random() * array.length]);
+
+
+
+
 
 
 
