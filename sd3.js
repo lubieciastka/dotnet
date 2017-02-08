@@ -65,3 +65,24 @@ for (var i = 0; i < counter; i++){
 
 console.log(output);
 
+// bubble sort
+
+var table = [1,4,2,42,23,33,3,9];
+var isNotSorted = false;
+
+do {
+  isNotSorted = false;
+  for(var i = 0; i < table.length -1; i++){
+    var a = table[i];
+    var b = table[i + 1];
+    
+    if(a > b){
+      table[i] = b;
+      table[i + 1] = a;
+      isNotSorted = true;
+    }
+  }
+}while(isNotSorted === true);
+
+console.log(table);
+
