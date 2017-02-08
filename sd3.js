@@ -34,3 +34,17 @@ for (var i = 0; i < array.length; i++){
   }
 }
 
+//fibonacci
+
+var a = 0, b = 1, suma = 0, counter = 20;
+
+console.log(a);
+console.log(b);
+
+for (var i = 0; i < counter; i++){
+  suma = a + b;
+  a = b;
+  b = suma;
+  console.log(b);
+}
+
