@@ -48,3 +48,20 @@ for (var i = 0; i < counter; i++){
   console.log(b);
 }
 
+
+//fibonacci w poziomie
+
+var a = 0, b = 1, suma = 0, counter = 6, output="0 1";
+
+console.log(a);
+console.log(b);
+
+for (var i = 0; i < counter; i++){
+  suma = a + b;
+  a = b;
+  b = suma;
+  output += " " + b;
+}
+
+console.log(output);
+
