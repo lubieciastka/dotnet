@@ -78,6 +78,27 @@ if (counter === table.length) {
 }
 
 
+// papier/ kamien/ nozyce wersja basic
+
+var user1 = prompt('papier/ kamien/ nozyce');
+var user2 = prompt('papier/ kamien/ nozyce');
+
+if (user1 === user2){
+	console.log("remis");
+  return;
+}
+
+if ((user1 === "papier" && user2 ==="kamien") 
+ || (user1 === "kamien" && user2 ==="nozyce")
+ || (user1 === "nozyce" && user2 ==="papier")){
+ console.log("user1 wygral");
+ return;
+ }
+ 
+ console.log("user2 wygral");
+
+
+
 
 
 
