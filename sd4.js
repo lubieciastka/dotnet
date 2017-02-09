@@ -13,8 +13,7 @@ for (var i = 0; i < table.length; i++){
 
 console.log(position);
 
-
-- Silnia w JS
+// Silnia w JS
 var silnia = 5;
 var wynik = 1;
 
@@ -24,21 +23,26 @@ for(var i = 1; i <= silnia; i++){
 
 console.log(wynik);
 
-
-
-
 // randomowe stringi
-//n - dlugosc stringa
-//a-z0-9
+var availableChars = "abcdefghijklmnopqrstuwxyz123456789";
+var length = 9;
+var result = "";
+var charCounter = 0;
 
+for (var i = 0; i < length; i++) {
+  var temp = availableChars[Math.floor(Math.random() * availableChars.length)];
 
+  if (isNaN(temp)) {
+    if (charCounter % 2 === 0) {
+      temp = temp.toUpperCase();
+    }
+    charCounter++;
+  }
 
+  result += temp;
+}
 
-
-
-
-
-
+console.log(result);
 
 
 
