@@ -44,6 +44,40 @@ for (var i = 0; i < length; i++) {
 
 console.log(result);
 
+// do domu - mechanizm coerction
+var table = [1, 2, 3, 4, 5, 6, '8as'];
+var counter = 0;
+
+for (var i = 0; i < table.length; i++) {
+  if (isNaN(table[i]) === false && table[i] % 2 === 0) {
+    counter++;
+  }
+}
+
+if (counter === table.length) {
+  console.log('wszystkie sa parzyste');
+} else {
+  console.log('parzystych jest ' + counter + ' liczb z ' + table.length + ' elementow');
+}
+
+// dodatkowe
+var table = [[], {a:'b'}, '', false, true, 1!==0];
+var counter = 0;
+
+for (var i = 0; i < table.length; i++) {
+  console.log(table[i], table[i] % 2, table[i] % 2 === 0);
+  if (isNaN(table[i]) === false && table[i] % 2 === 0) {
+    counter++;
+  }
+}
+
+if (counter === table.length) {
+  console.log('wszystkie sa parzyste');
+} else {
+  console.log('parzystych jest ' + counter + ' liczb z ' + table.length + ' elementow');
+}
+
+
 
 
 
