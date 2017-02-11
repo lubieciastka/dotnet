@@ -54,3 +54,9 @@ image.addEventListener('click', function(){
 	image.setAttribute('src', images[Math.floor(Math.random() * images.length)]);
 });
 
+
+// resize:
+
+window.addEventListener('resize', function(event){
+	console.log(window.outerHeight, window.outerWidth);
+});
