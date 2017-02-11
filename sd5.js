@@ -43,3 +43,14 @@ function drawRow(size) {
   return tr;
 }
 
+//podmiana obrazkow
+var images = [	'https://ih0.redbubble.net/image.161317883.9034/flat,1000x1000,075,f.u1.jpg',
+  'https://yt3.ggpht.com/-V92UP8yaNyQ/AAAAAAAAAAI/AAAAAAAAAAA/zOYDMx8Qk3c/s900-c-k-no-mo-rj-c0xffffff/photo.jpg'
+];
+
+var image = document.querySelector('img');
+
+image.addEventListener('click', function(){
+	image.setAttribute('src', images[Math.floor(Math.random() * images.length)]);
+});
+
