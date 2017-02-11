@@ -132,6 +132,17 @@ function draw(gameTable) {
   }
 }
 
+//obiekty - pogoda
+var weather = {
+	temperatura: "10C",
+  zachmurzenie: "duze",
+  cisnienie: "male",
+  getWeather: function(){
+  	console.log(this.temperatura, this.zachmurzenie, this.cisnienie);
+  }
+};
+
+weather.getWeather();
 
 
 
