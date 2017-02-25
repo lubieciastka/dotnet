@@ -41,3 +41,58 @@ table{
     }
   }
 }
+
+
+
+// zadanie 3
+
+nav {
+  background-color: green;
+  > ul {
+    list-style: none;
+    > li {
+      display: inline-block;
+      background: yellow;
+      text-align: center;
+      a {
+        display: inline-block;
+        padding: 20px;
+        width: 100px;
+        text-decoration: none;
+      }
+      &:hover {
+        background: magenta;
+        a {
+          color: #666;
+        }
+        ul {
+          display: block;
+        }
+      }
+      ul {
+        display: none;
+        list-style: none;
+        position: absolute;
+        li {
+          background: blue;
+        }
+      }
+    }
+  }
+}
+
+<nav>
+  <ul>
+    <li><a href="http://onet.pl">Menu 1</a></li>
+    <li>
+      <a href="http://onet.pl">Menu 2</a>
+      <ul>
+        <li><a href="http://onet.pl">SubMenu 1</a></li>
+        <li><a href="http://onet.pl">SubMenu 2</a></li>
+        <li><a href="http://onet.pl">SubMenu 2</a></li>
+      </ul>
+    </li>
+    <li><a href="http://onet.pl">Menu 2</a></li>
+  </ul>
+</nav>
+
