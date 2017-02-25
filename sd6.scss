@@ -1,3 +1,4 @@
+// zadanie 1
 $base-link-color: red;
 $base-link-color-hover: green;
 
@@ -12,4 +13,31 @@ a {
 a:hover {
    color: $base-link-color-hover;
   border: $base-link-hover-border-width solid black;
+}
+
+// zadanie 2
+
+$color1: red;
+$color2: magenta;
+$color3: yellow;
+$color4: blue;
+
+table{
+  tr{
+    td{
+      padding: 10px;
+      background-color: $color1;
+      &:nth-child(even){
+        background-color: $color3;
+      }
+    }
+    &:nth-child(odd){
+      td{
+        background-color: $color2;
+        &:nth-child(even){
+          background-color: $color4;
+        }
+      }
+    }
+  }
 }
