@@ -111,3 +111,13 @@ div {
   @include border-radius(10px);
 }
 
+// zadanie PX -> REM
+
+@mixin calculateRem($size) {
+  $remSize: $size / 16px;
+  font-size: $remSize * 1rem;
+}
+p {
+  @include calculateRem(14px)
+}
+
