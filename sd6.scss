@@ -96,3 +96,18 @@ nav {
   </ul>
 </nav>
 
+// Zadanie 5
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+div {
+  background: #f0f;
+  padding: 10px;
+  float: left;
+  
+  @include border-radius(10px);
+}
+
