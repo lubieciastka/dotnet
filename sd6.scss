@@ -181,3 +181,14 @@ $base-width: 960px;
   @extend .error;
   background: lime;
 }
+
+// zadanie 10
+@mixin grid ($numberOfColumns) {
+  @for $i from 0 to $numberOfColumns {
+    .column-#{$i} {
+      width: 100% / $numberOfColumns;
+    }
+  }  
+}
+
+@include grid(12);
