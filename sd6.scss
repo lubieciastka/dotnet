@@ -121,3 +121,63 @@ p {
   @include calculateRem(14px)
 }
 
+// zadanie 6
+<div>
+  <div class="left">
+    left
+  </div>
+  <div class="center">
+    center
+  </div>
+  <div class="right">
+    right
+  </div>
+</div>
+
+$base-width: 960px;
+
+.left {
+  background: red;
+  width: $base-width * 0.2;
+  float: left;
+}
+
+.center {
+  background: yellow;
+  width: $base-width * 0.6;
+  float: left;
+}
+
+.right {
+  background: green;
+  width: $base-width * 0.2;
+  float: left;
+}
+
+// zadanie 7
+<div class="error">
+  left
+</div>
+<div class="serious-error">
+  center
+</div>
+<div class="critical-error">
+  right
+</div>
+
+.error {
+  background: red;
+  border: 2px solid yellow;
+  padding: 10px;
+}
+
+.serious-error {
+  @extend .error;
+  background: blue;
+  border: 20px dotted white;
+}
+
+.critical-error {
+  @extend .error;
+  background: lime;
+}
