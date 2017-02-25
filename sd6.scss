@@ -1,0 +1,15 @@
+$base-link-color: red;
+$base-link-color-hover: green;
+
+$base-link-border-width: 10px;
+$base-link-hover-border-width: 20px;
+
+a {
+  color: $base-link-color;
+  border: $base-link-border-width solid black;
+}
+
+a:hover {
+   color: $base-link-color-hover;
+  border: $base-link-hover-border-width solid black;
+}
